@@ -1,0 +1,25 @@
+{
+    "name": "logic",
+    "displayName": "Logic Specification",
+    "description": "Syntax highlighting for logic specification",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "logic",
+            "aliases": ["Logic Specification", "logic"],
+            "extensions": [".logic"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "logic",
+            "scopeName": "source.logic",
+            "path": "./syntaxes/logic.tmLanguage.json"
+        }]
+    }
+}

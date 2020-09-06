@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Logic Specification",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.logic",
+				"match": "\\b(let|data|actors|when|then|end)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.logic",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.logic",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.logic"
+}
